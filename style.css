@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.lucimar-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #daa520;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    columns: #000;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 600;
+}
+
+h2.titulo span{
+    color: #daa520;
+    font-weight: 500;
+}
+
+button:hover, form .lucimar-enviar input:hover {
+    box-shadow: 0px 0px 8px #daa520ef;
+    transform: scale(1.07);
+}
+
+
+header {
+    padding: 10px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #868686;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #000000;
+    text-decoration: none;
+    transform: scale(1.07);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.lucimar-abrir-menu svg{
+    color: #daa520;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-mobile{
+    background-color:#ffffff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .lucimar-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .lucimar-fechar svg{
+    color:#000000;
+    width: 19px;
+    height: 19px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color:#daa520;
+    color:white;
+}
+
+.overlay-menu{
+    background-color: #00000094;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+section.topo-do-site {
+    padding: 80px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    font-size: 42px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.topo-do-site .txt-topo-site p{
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2.5s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.especialidades{
+    padding: 110px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+    
+.especialidades .especialidades-box{
+    color: #000;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #3535357c;
+}
+
+.especialidades .especialidades-box svg{
+    width: 65px;
+    height: 65px; 
+    color: #daa520;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+    
+}
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #000;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    
+}
+
+.sobre .txt-sobre h2 span{
+    color: #daa520;
+    display: block;
+    font-weight: 500;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.lucimar-social {
+    display: flex;
+    gap: 10px;
+}
+
+.lucimar-social .social-button button {
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+    border: none;
+    background-color: #daa520;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer; 
+    padding: 0; 
+    margin: 0 5px;
+    transition: .2s;
+    
+}
+
+.lucimar-social .social-button button svg{
+    width: 24px;
+    height: 24px; 
+    fill: #fff;
+     
+}
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #24242427;
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+.titulo {
+    margin-bottom: 50px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+    margin-bottom: 20px;
+}
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #57575733;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 175px;
+    overflow: auto;
+}
+
+form .lucimar-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .lucimar-enviar input{
+    width: 120px;
+    background-color: #daa520;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+footer {
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #24242427;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+
+@media screen and (max-width: 1020px) {
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .menu-desktop, .lucimar-contato{
+        display: none;
+    }
+
+    section.topo-do-site {
+        padding: 40px 7%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    section.especialidades{
+        padding: 80px 8%;
+    }
+
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 32px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .lucimar-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-height: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    .lucimar-abrir-menu,
+    .menu-mobile,
+    .overlay-menu {
+        display: none;
+    }
+}
