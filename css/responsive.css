@@ -1,0 +1,161 @@
+
+@media screen and (max-width: 900px){
+    header .menu-desktop, header .lucimar-contato{
+        display: none;
+    }
+
+    header .lula-menu-mob{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 878px){
+/* responsivo do site */
+.hero-site .txt-hero h1{
+    font-size: 2.6em;
+    line-height: 45px;
+    color: #fff;
+}
+
+section.hero-site{
+    background-position:60%;
+}
+
+.hero-site .txt-hero p{
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.hero-site .txt-hero p span{
+    display: block;
+}
+
+.hero-site button{
+    font-size: 17px;
+    margin: -10px 0;
+}
+
+.hero-site button{
+    background-color: #ffffff;
+    color: black; 
+    border: none;
+}
+
+/* responsivo dos projetos */
+
+.projetos .itens-container{
+    flex-direction: column;
+}
+
+.projetos .itens-container .img-itens img{
+    width: 100%;
+}
+
+.projetos .itens-container .txt-itens p{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.projetos .itens-container .item-1{
+    order: 1;
+}
+
+.projetos .itens-container .item-2{
+    order: 0;
+}
+
+/* estilo contato */
+
+
+.txt-contato, .icons-contato{
+    display: block;
+    width: 100%;
+}
+
+.contato .txt-contato h3{
+    font-size: 2em;
+    line-height: 40px;
+}
+
+.contato .txt-contato p{
+    margin-bottom: 20px;
+}
+
+.contato .icons-contato button{
+    width: 100%;
+}
+
+/* estilo da sessão como funciona */
+
+.txt-funciona, .instrucoes{
+    display: block;
+    width: 100%;
+}
+
+.como-funciona .txt-funciona{
+    position: static;
+}
+
+.como-funciona .txt-funciona h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+
+.instrucoes .instru-box{
+    flex-direction: column;
+    text-align: center;
+}
+
+/* estilo sessão sobre */
+
+.sobre .txt-sobre h2{
+    line-height: 35px;
+}
+
+.sobre .flex{
+    flex-direction: column;
+}
+
+.sobre .txt-sobre h2{
+    line-height: 35px;
+}
+
+.sobre .txt-sobre p{
+    font-size: 14px;
+    text-align:left;
+}
+
+.sobre .botao {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 20px; 
+    margin-left: 0; 
+    width: 90%;
+}
+
+.sobre .botao button {
+    width: 100%; /* Faz o botão ocupar a largura total do contêiner */
+    height: 45px;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* estilo do rodape */
+
+footer .middle-footer a{
+    display: block;
+    margin: 15px 0;
+}
+
+footer .bottom-footer p{
+    font-size: 14px;
+}
+
+}
